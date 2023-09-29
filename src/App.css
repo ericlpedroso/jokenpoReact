@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap");
+
+body {
+  user-select: none;
+}
+
+.header-container {
+  padding: 5px 0px 5px 40px;
+  background-color: rgb(12, 23, 37);
+  min-width: 100vw;
+}
+
+.header-container > h1 {
+  color: white;
+  font-family: "Palanquin Dark", "sans-serif";
+  text-shadow: 4px 3px 0px rgb(40, 79, 138);
+}
+
+.content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 250px 50px 250px;
+  height: 700px;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
+  font-family: "Palanquin Dark", "sans-serif";
+  align-items: center;
+}
+
+.placar-container > p {
+  min-width: 480px;
+  font-size: 2em;
+  font-weight: bold;
+  width: fit-content;
+  color: white;
+  padding: 0px 15px 0px 15px;
+  border-radius: 10px;
+}
+
+.placar-container {
+  padding: 5px 0px 20px 0px;
+  background: rgb(12, 23, 37);
+  width: 75%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.placar {
+  border-top: 2px solid rgb(19, 31, 46);
+  padding-top: 10px;
+  background: rgb(12, 23, 37);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+p {
+  color: white;
+}
+
+.x {
+  position: relative;
+  margin-top: 160px;
+  margin-bottom: -225px;
+  margin-right: 5px;
+  margin-left: -5px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 7px white;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.jogador-container,
+.bot-container {
+  width: 49%;
+  height: 100%;
+  color: white;
+  font-family: "Palanquin Dark", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jogo-container {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.nome-jogador {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+}
+
+.img-container {
+  margin-top: 50px;
+  width: 170px;
+  height: 170px;
+  background: white;
+  border: 5px solid rgb(12, 23, 37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.img-container > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.jogadas-container {
+  font-weight: bold;
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.2em;
+  background: rgb(12, 23, 37);
+  width: 75%;
+  border-radius: 15px;
+  padding: 10px 0px 20px 0px;
+}
+
+.jogadas-container2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.imgbot {
+  transform: scaleX(-1);
+}
+
+.btn-escolhas {
+  border-radius: 100%;
+  border: none;
+  background: transparent;
+}
+
+.jogadas {
+  width: 130px;
+  height: 130px;
+  transition: all 0.2s ease;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.jogadas:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#btn_jogar {
+  margin-top: 15px;
+  font-size: 1.2em;
+  padding: 0px 20px 0px 20px;
+  font-family: "Palanquin Dark";
+  background: rgb(12, 23, 37);
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+}
+
+#btn_jogar:hover {
+  background: white;
+  color: rgb(12, 23, 37);
+  cursor: pointer;
+}
+
+.vitoria-label,
+.derrota-label,
+.empate-label {
+  margin-bottom: -100px;
+  margin-top: 30px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  transition: all 1s ease;
+}
+
+.vitoria-label {
+  text-shadow: 0px 0px 10px rgb(153, 255, 0), 0px 0px 20px rgb(153, 255, 0),
+    0px 0px 40px rgb(153, 255, 0);
+}
+
+.derrota-label {
+  text-shadow: 0px 0px 10px rgb(255, 0, 0), 0px 0px 20px rgb(255, 0, 0),
+    0px 0px 40px rgb(255, 0, 0);
+}
+
+.empate-label {
+  text-shadow: 0px 0px 10px rgb(255, 204, 0), 0px 0px 20px rgb(255, 204, 0),
+    0px 0px 40px rgb(255, 204, 0);
+}
